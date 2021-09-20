@@ -20,7 +20,9 @@ function App() {
   
   const blogCards = nObj.map((item,pos)=>{
     return(
-      <BlogCard key={pos}/>
+      <BlogCard key={pos} 
+        title={item.title} 
+        description={item.description}/>
       // <div className="card" key={pos}>
       //   <h3>Title: {item.title}</h3>
       //   <p>Description: {item.description}</p>
