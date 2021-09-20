@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import BlogCard from './blogCards';
 
 function App() {
-  return (
+
+  const nObj = [
+    {
+      title: 'blog 1',
+      description: 'Testing react app Testing react app Testing react app'
+    },
+    {
+      title: 'blog 2',
+      description: 'Testing react app Testing react app Testing react app'
+    },
+    {
+      title: 'blog 3',
+      description: 'Testing react app Testing react app Testing react app'
+    }
+  ]
+  
+  const blogCards = nObj.map((item,pos)=>{
+    return(
+      <BlogCard key={pos}/>
+      // <div className="card" key={pos}>
+      //   <h3>Title: {item.title}</h3>
+      //   <p>Description: {item.description}</p>
+      // </div>
+    )
+  })
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {blogCards}
     </div>
   );
 }
