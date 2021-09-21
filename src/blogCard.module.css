@@ -8,6 +8,17 @@
     display: inline-block;
   }
 
+.card > button{
+    box-shadow: 0 2px 5px rgb(71, 66, 66);
+    background-color: rgb(0, 140, 255);
+    color: white;
+    
+}
+
+.LikeCount{
+    font-weight: 600;
+}
+
   @media (max-width: 820px){
       .card{
           width: 80%;

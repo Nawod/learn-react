@@ -1,10 +1,13 @@
 .App{
   text-align: center;
 }
-/* .card{
-  padding: 15px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 5px rgb(71, 66, 66);
+
+.btn {
+  padding: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+  background-color: rgb(94, 231, 135);
+  box-shadow: 0 2px 5px gray;
+  border-color: #ffffff;
   border-radius: 5px;
-  margin: 15px;
-} */
+}
